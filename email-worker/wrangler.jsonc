@@ -1,0 +1,9 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "angel-email",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-10-01",
+  "observability": { "enabled": true },
+  // WEBHOOK_URL is set at deploy time; EMAIL_WEBHOOK_SECRET is a wrangler secret.
+  "vars": { "WEBHOOK_URL": "" }
+}
